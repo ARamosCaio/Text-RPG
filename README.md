@@ -3,6 +3,6 @@
 
 Create a clone of the repository and run the main.py archive to play
 
-The game is only about reading and making smart choices.
+The game is all about reading and making smart choices.
 
 Create your character, choose your breed and class and go explore!
