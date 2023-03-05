@@ -1,5 +1,10 @@
 def riddle(answer):
-    if answer == "Buraco" or answer == "Um buraco":
-        return '1'
+    if answer == "Buraco" or answer == "Um buraco" or answer == "buraco" or answer == "Um Buraco" or answer == 'BURACO':
+        result = '1'
+        return result
     else:
-        return '2'
+        result = '2'
+        return result
+    
+
+

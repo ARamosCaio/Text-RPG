@@ -23,11 +23,11 @@ os.system('cls')
 
 #Inicio da história, primeira interação com o usuário
 
-actions.tell_story('\n \nOlá aventureiro, seja bem-vindo ao 4-rooms. \n\n')
+actions.tell_story('\n \nOlá aventureiro, seja bem-vindo ao Rooms. \n\n')
 
 #time.sleep(3)
 
-actions.tell_story('Seu objetivo aqui é entrar nas masmorras, enfrentar 4 desafios diferentes em 4 salas aleatórias e encontrar o tesouro!\n')
+actions.tell_story('Seu objetivo aqui é entrar nas masmorras, enfrentar os desafios e encontrar o tesouro!\n')
 
 name = actions.insert_name()
 
@@ -36,7 +36,7 @@ actions.tell_story('\nPara iniciarmos, escolha sua espécie, sua classe e role o
 print('Lembrando que cada espécie e cada classe tem seus pontos fortes e fracos, escolha com cuidado!\n')
 
 
-#time.sleep(10)
+#time.sleep(4)
 
 
 character.append(breeds[int(input('1. Humano \n \n2. Elfo \n \n3. Ciborgue \n \n4. Anfíbio \n \n5. Golem \n \nDigite o número da sua raça/espécie: '))-1])
@@ -54,18 +54,18 @@ os.system('cls')
 actions.tell_story('\nAgora vamos rolar os dados para sortear seus atributos de FORÇA, INTELIGÊNCIA, AGILIDADE e RESISTÊNCIA\n')
 
 
-#time.sleep(4)
-actions.tell_story('Sorteando.')
+#time.sleep(3)
+actions.tell_story('\nSorteando.')
 #time.sleep(1)
-actions.tell_story('Sorteando..')
+actions.tell_story('\nSorteando..')
 #time.sleep(1)
-actions.tell_story('Sorteando...')
+actions.tell_story('\nSorteando...')
 #time.sleep(1)
 
 for atribute in atributes:
     atributes[atribute] = actions.roll_dice()
 
-actions.tell_story('\nParabéns {}! você possui os seguintes valores de atributos: '.format(name))
+actions.tell_story('\n\nParabéns {}! você possui os seguintes valores de atributos: '.format(name))
 actions.tell_story('\n \n Força: {}'.format(atributes["strenght"]))
 actions.tell_story('\n Inteligência: {}'.format(atributes["inteligence"]))
 actions.tell_story('\n Agilidade: {}'.format(atributes["agility"]))
@@ -73,8 +73,13 @@ actions.tell_story('\n Resistência: {} \n'.format(atributes["endurance"]))
 
 actions.tell_story('\nAgora que você está pronto, esta na hora de enfrentar os desafios e conquistar o tesouro')
 
-time.sleep(5)
+time.sleep(7)
 
 os.system('cls')
 
+actions.tell_story('\nVocê adentra nas masmorras abaixo da superfície e após descer pelas escadas você se depara com uma porta de madeira.')
+
+actions.start_room()
+
 rooms.riddle_room()
+
