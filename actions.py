@@ -22,7 +22,8 @@ def tell_end(sentence):
 # função que permite que o usuário corrija seu nome caso tenha escrito errado e após isso confirme
 def insert_name():
     name = input('\nQual o seu nome aventureiro? : ')
-    confirm = input('\nVocê é {}? \n\n1. Sim  2. Não\n'.format(name))
+    tell_story(f'\nVocê é {name}? \n\n1. Sim  2. Não : ')
+    confirm = input('')
     if confirm == '1':
         return name
     elif confirm == '2':
@@ -51,7 +52,7 @@ def start_room():
         action_door = input('\nO que deseja fazer? : ')
         if action_door == '1':
             os.system('cls')
-            tell_story('\nVocê abre a porta com cautela sem entrar e observa o interior da sala. \nAlém das paredes velhas, marcadas pela passagem do tempo e pelo desespero dos prisioneiros da masmorra você observa a presença inusitada de um ser sentado no centro da sala: Uma Toupeira Velha Gigante')
+            tell_story('\nVocê abre a porta com cautela sem entrar e observa o interior da sala. \nAlém das paredes velhas, marcadas pela passagem do tempo e pelo desespero dos prisioneiros da masmorra, você observa a presença inusitada de uma toupeira gigante sentada no centro da sala')
             tell_story('\nEnquanto você observa a sala por alguns segundos, a Sra. toupeira lhe diz "Entre aventureiro, não tenha medo, se aproxime para conversarmos"')
             time.sleep(2)
             tell_story('\n1. Entrar')
@@ -88,11 +89,11 @@ def riddle_interaction():
     result = challenges.riddle(answer)
     if result == '1':
         tell_story('\n\nCorreto! disse a toupeira enquanto se levantava lentamente, revelando embaixo de si um buraco.')
-        tell_story('\n\nToupeira: Aí está aventureiro, como se provou inteligente o bastante, eis o caminho para a proxima sala, que leva ao tesouro')
-        tell_story('\n\nToupeira: Boa sorte na sua jornada\n')
+        tell_story('\n\nToupeira: Aí está aventureiro, como se provou inteligente o bastante, eis o caminho para a proxima sala, que leva ao tesouro.')
+        tell_story('\n\nToupeira: Boa sorte na sua jornada.\n')
         time.sleep(3)
         os.system('cls')
-        tell_story('\nSeguindo a informação da toupeira, você desce pelo buraco e segue o caminho pouco iluminado até conseguir enxergar uma fonte de luz que marca a saída do túnel')
+        tell_story('\nSeguindo a informação da toupeira, você desce pelo buraco e segue o caminho pouco iluminado até conseguir enxergar uma fonte de luz que marca a saída do túnel.')
         time.sleep(6)
         finish_game()
     elif result =='2':
@@ -105,17 +106,17 @@ def finish_game():
     time.sleep(2)
     tell_story('\nAo se aproximar do portal uma energia de cor azulada emana do chão ao seu redor, subindo em direção à figura do leão, entrando pela boca e preenchendo os olhos vazios com uma tom azul brilhante como de uma safira')
     time.sleep(2)
-    tell_story('\nEnquanto você observa maravilhado, uma voz calma, quase sussurrada. ecoa partindo da boca do leão se espalhando por toda a sala.\n "Inclitus"')
+    tell_story('\nEnquanto você observa maravilhado, uma voz calma, quase sussurrada. ecoa partindo da boca do leão se espalhando por toda a sala.')
     time.sleep(2)
     tell_story('\nA porta se abre e o brilho de todo o ouro presente na câmara o cega por um momento, você conseguiu! ')
     time.sleep(2)
-    tell_story('\nNa parede da sala há uma inscrição que diz: \n "A aquele que chegou ao final dos desafios, INCLITUS, deixo a você o meu tesouro e mais um presente.')
+    tell_story('\nNa parede da sala há uma inscrição que diz: \n "A aquele que chegou ao final dos desafios, HONORIS, deixo a você o meu tesouro e mais um presente.')
     time.sleep(0.5)
-    tell_story('\nProfira a palavra "Celare" para ocultar todo o tesouro dentro de suas botas, voce não sentirá sua presença mas ele estará contigo')
+    tell_story('\nProfira a palavra "Celare" para ocultar todo o tesouro dentro de suas vestes, voce não sentirá sua presença mas ele estará contigo.')
     time.sleep(0.5)
     tell_story('\nFeito isso, imagine o local mais seguro em que ja esteve e profira a frase "Post Questus Relinquo" e você e o tesouro serão instantaneamente transportados para lá.')
     time.sleep(0.5)
-    tell_story('\nPara que o tesouro reapareça, basta proferir a palavra "Comparuit". \n A inscrição está assinada por Firio, o ganancioso')
+    tell_story('\nPara que o tesouro reapareça, basta proferir a palavra "Comparuit". \nA inscrição está assinada por Fírio, o ganancioso')
     time.sleep(2)
     tell_story('\nVocê segue as intruções da inscrição e leva consigo toda a riqueza da sala, use-a com sabedoria')
     time.sleep(4)
