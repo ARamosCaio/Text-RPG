@@ -11,7 +11,8 @@ atributes = {
     "strenght" : 0,   
     "inteligence": 0,
     "agility": 0,
-    "endurance": 0
+    "endurance": 0,
+    "luck" : 0
 }
 
 breeds = ['Humano', 'Elfo', 'Ciborgue', 'Anfíbio', 'Golem']
@@ -31,7 +32,7 @@ actions.tell_story('Seu objetivo aqui é entrar nas masmorras, enfrentar os desa
 
 name = actions.insert_name()
 
-actions.tell_story('\nPara iniciarmos, escolha sua espécie, sua classe e role o dado de 1 a 20 para sortear seus pontos de FORÇA, INTELIGÊNCIA, AGILIDADE e RESISTÊNCIA \n')
+actions.tell_story('\nPara iniciarmos, escolha sua espécie, sua classe e role o dado de 1 a 20 para sortear seus pontos de FORÇA, INTELIGÊNCIA, AGILIDADE, RESISTÊNCIA e SORTE\n')
 
 print('Lembrando que cada espécie e cada classe tem seus pontos fortes e fracos, escolha com cuidado!\n')
 
@@ -51,7 +52,7 @@ time.sleep(3)
 
 os.system('cls')
 
-actions.tell_story('\nAgora vamos rolar os dados para sortear seus atributos de FORÇA, INTELIGÊNCIA, AGILIDADE e RESISTÊNCIA\n')
+actions.tell_story('\nAgora vamos rolar os dados para sortear seus atributos de FORÇA, INTELIGÊNCIA, AGILIDADE, RESISTÊNCIA e SORTE\n')
 
 
 #time.sleep(3)
@@ -69,7 +70,8 @@ actions.tell_story('\n\nParabéns {}! você possui os seguintes valores de atrib
 actions.tell_story('\n \n Força: {}'.format(atributes["strenght"]))
 actions.tell_story('\n Inteligência: {}'.format(atributes["inteligence"]))
 actions.tell_story('\n Agilidade: {}'.format(atributes["agility"]))
-actions.tell_story('\n Resistência: {} \n'.format(atributes["endurance"]))
+actions.tell_story('\n Resistência: {}'.format(atributes["endurance"]))
+actions.tell_story('\n Sorte: {}\n'.format(atributes["luck"]))
 
 actions.tell_story('\nAgora que você está pronto, esta na hora de enfrentar os desafios e conquistar o tesouro')
 
