@@ -1,6 +1,4 @@
 import actions
-import time
-import challenges
 import os
 
 rooms = ['riddle-room']

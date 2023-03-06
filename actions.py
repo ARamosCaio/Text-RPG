@@ -27,7 +27,9 @@ def insert_name():
         return name
     elif confirm == '2':
         return insert_name()
-    
+    else:
+        print('\nInsira apenas os valores 1 ou 2\n')
+        return insert_name()    
 
 # função rolar dado d20 comum
 def roll_dice():
@@ -76,6 +78,10 @@ def start_room():
     elif action_door == '3':
         os.system('cls')
         tell_story('\nVocê entra na sala retangular de paredes de pedra com musgo e chão de terra. \nÀ sua frente está uma toupeira gigante, que aparenta já ter uma idade avançada, sentada no centro da sala tomando um chá recém preparado na fogueira que se encontra diante dela.\nÀ sua esquerda está uma parede de pedra coberta de musgo e úmida. \nÀ sua direita está uma parede semelhante com correntes fixadas firmemente, porém com os elos quebrados como se os prisioneiros tivessem escapado.') 
+    
+    else:
+        tell_story('Insira um valor válido (1, 2 ou 3)')
+        start_room()
 
 def riddle_interaction():
     answer = input('\nToupeira: Responda aventureiro: "Quanto mais tiram, maior eu fico, o que sou?"\n \nResposta: ')
