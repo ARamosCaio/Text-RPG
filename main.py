@@ -17,7 +17,7 @@ breeds = ['Humano', 'Elfo', 'Ciborgue', 'Anfíbio', 'Golem']
 classes = ['Guerreiro', 'Caçador', 'Ladrão', 'Druida', 'Mago', 'Bardo']
 
 #Apagando o terminal antes de começar
-os.system('cls')
+os.system('clear')
 
 #Inicio da história, primeira interação com o usuário
 
@@ -46,7 +46,7 @@ actions.tell_story(f'\nVocê é um {character[0]} {character[1]} \n')
 
 time.sleep(3)
 
-os.system('cls')
+os.system('clear')
 
 actions.tell_story('\nAgora vamos rolar os dados para sortear seus atributos de FORÇA, INTELIGÊNCIA, AGILIDADE, RESISTÊNCIA e SORTE\n')
 
@@ -76,7 +76,7 @@ actions.tell_story('\nAgora que você está pronto, esta na hora de enfrentar os
 
 time.sleep(7)
 
-os.system('cls')
+os.system('clear')
 
 actions.tell_story('\nVocê adentra nas masmorras abaixo da superfície e após descer pelas escadas você se depara com uma porta de madeira.')
 

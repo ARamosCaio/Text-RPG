@@ -51,7 +51,7 @@ def start_room():
         tell_story('\n 2. Abrir a porta e entrar')
         action_door = input('\nO que deseja fazer? : ')
         if action_door == '1':
-            os.system('cls')
+            os.system('clear')
             tell_story('\nVocê abre a porta com cautela sem entrar e observa o interior da sala. \nAlém das paredes velhas, marcadas pela passagem do tempo e pelo desespero dos prisioneiros da masmorra, você observa a presença inusitada de uma toupeira gigante sentada no centro da sala')
             tell_story('\nEnquanto você observa a sala por alguns segundos, a Sra. toupeira lhe diz "Entre aventureiro, não tenha medo, se aproxime para conversarmos"')
             time.sleep(2)
