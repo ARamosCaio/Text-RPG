@@ -1,6 +1,6 @@
 from tkinter import *
-from tkinter import ttk
 import tkinter as tk
+import tkinter.font as font
 
 root = tk.Tk()
 root.geometry("800x800")
@@ -16,7 +16,7 @@ def first_action():
 
 def second_action():
     text.delete(0,"end")
-    text.insert(0, "You enter the room")
+    text.insert(0, "You Enter the room")
 
 set_btn = tk.Button(root, text="Open the door", command=first_action, height=3, width=10)
 set_btn.pack()
