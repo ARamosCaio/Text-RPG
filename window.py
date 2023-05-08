@@ -1,26 +1,17 @@
 from tkinter import *
-import tkinter as tk
-import tkinter.font as font
 
-root = tk.Tk()
-root.geometry("800x800")
-root.title("Main")
+root = Tk()
 
+class App():
+    def __init__(self):
+        self.root = root
+        self.screen_config()
+        root.mainloop()
+    
+    def screen_config(self):
+        self.root.title("ROOMS")
+        self.root.geometry("1000x900")
+        self.root.configure(background="#121212")
+        self.root.resizable(False, False)
 
-text = tk.Text(root, width=90)
-text.pack()
-
-def first_action():
-    text.delete(1,"end")
-    text.insert(1,"You Opened de door")
-
-def second_action():
-    text.delete(1,"end")
-    text.insert(1,"You Enter the room")
-
-set_btn = tk.Button(root, text="Open the door", command=first_action, height=3, width=10)
-set_btn.pack()
-
-set_btn2 = tk.Button(root, text="Enter the room", command=second_action, height=3, width=10)
-set_btn2.pack()
-root.mainloop()
+App()
