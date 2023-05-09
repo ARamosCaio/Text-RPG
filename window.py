@@ -1,4 +1,5 @@
 from tkinter import *
+import tkinter
 
 root = Tk()
 
@@ -14,6 +15,8 @@ class App():
         self.root.geometry("1000x900")
         self.root.configure(background="#dbdbdb")
         self.root.resizable(False, False)
+        self.root.iconbitmap("images/magichat.ico")
+        
     
     def screen_frames(self):
         self.text_frame = Frame(self.root, bd=2, bg="#121212", highlightbackground="#5c5c5c", highlightthickness=4)
